@@ -60,7 +60,7 @@
 /*Scroll-spy*/
 
 .nav-link.active {
-    color: white !important;
+    color: rgb(108, 100, 100) !important;
 }
 
 body { position: relative;}
