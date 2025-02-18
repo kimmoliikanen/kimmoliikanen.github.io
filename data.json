@@ -4,6 +4,6 @@
     "tuotteet": ["vaatteet", "jalkineet", "varusteet"],
     "henkilokunta":[{"nimi":"Eric Example", "titteli":"toimitusjohtaja"},
                     {"nimi":"Erica Example", "titteli":"omistaja"},
-                    {"nimi":"Mike Model", "titteli":"myyntijohtaja"}
+                    {"nimi":"Mike Model", "titteli":"myyntijohtaja"}        
                 ]
 }
