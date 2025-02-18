@@ -20,15 +20,19 @@
         }
 
         //oma url
-        fetch('https://github.com/kimmoliikanen/kimmoliikanen.github.io/blob/main/.json')
+        fetch("https://github.com/kimmoliikanen/kimmoliikanen.github.io/blob/main/.json")
 
         //muunnetaan vastaus JSON muotoon
-        .then(function(response){
+        .then(function (response) {
         return response.json();
         })
 
-        .then(function (responseJson){
+        .then(function (responseJson) {
         kerro(responseJson);
+        })
+
+        .catch(function (error) {
+            document.getElementById("vastaus").innerHTML = "<p>Tietoa ei pystytä hakemaan</p>";
         })
     </script>
 </body>
