@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON GIT EXAMPLE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Kimmon JSON testisivu</h1>
+    <div id="vastaus">
+    </div>
+    <script>
+        function kerro(data){
+            var teksti = "";
+            teksti = "<h1>" + data.yritys + "</h1>";
+            teksti = teksti + "<p>"+"<b>"+"Yhteystiedot" + "</b>"+"<br>"
+                + data.yhteystiedot.puhelin + "</br>"
+                + data.yhteystiedot.email + "</p>";
+            document.getElementById("vastaus").innerHTML = teksti;
+        }
+
+        //oma url
+        fetch('https://github.com/kimmoliikanen/kimmoliikanen.github.io/blob/main/.json')
+
+        //muunnetaan vastaus JSON muotoon
+        .then(function(response){
+        return response.json();
+        })
+
+        .then(function (responseJson){
+        kerro(responseJson);
+        })
+    </script>
+</body>
+</html>
