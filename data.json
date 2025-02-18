@@ -1,6 +1,6 @@
 {
     "yritys":"Mountain Trail", "yhteystiedot":{"osoite":"Niittykummuntie 12, Espoo",
-    "puhelin":"040 865 8699", "email": "info@mountaintrail.com"},
+    "puhelin":"040 865 869", "email": "info@mountaintrail.com"},
     "tuotteet": ["vaatteet", "jalkineet", "varusteet"],
     "henkilokunta":[{"nimi":"Eric Example", "titteli":"toimitusjohtaja"},
                     {"nimi":"Erica Example", "titteli":"omistaja"},
