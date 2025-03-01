@@ -1,0 +1,15 @@
+{
+    "toteutus": "Digitekniikat",
+    "lukumaara": 5,
+    "osallistujat":[
+        {"nimi":"Eric Example"},
+        {"nimi":"Erica Example"},
+        {"nimi":"Mike Model"},
+        {"nimi":"Meredith Model"},
+        {"nimi":"Ella Example"}
+    ],
+    "alku": "13.1.2025",
+    "loppu": "14.3.2025",
+    "kesto": "8 viikkoa",
+    "kuva": "xfile:///Users/kimmoliikanen/Library/CloudStorage/OneDrive-Personal/Digitekniikat/kimmoliikanen.github.io/nature-6761493_1280.jpg"
+}

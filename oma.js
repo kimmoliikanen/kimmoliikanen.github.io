@@ -5,16 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("otsikko").textContent = data.otsikko;
             document.getElementById("kuvaus").textContent = data.kuvaus;
             document.getElementById("kuva").src = data.kuva;
-            document.getElementById("kurssi").textContent = `${data.nimi} (${data.tunnus}) - ${data.opintopisteet} op`;
+
+            
+            document.getElementById("kurssi").textContent = `${data.opintojakso.nimi} (${data.opintojakso.tunnus}) - ${data.opintojakso.opintopisteet} op`;
+
 
             let sisaltolista = document.getElementById("sisalto");
+            sisaltolista.innerHTML = "";
             data.sisalto.forEach(item => {
                 let li = document.createElement("li");
                 li.textContent = item;
-                sisaltoLista-appenChild(li);
+                sisaltolista.appendChild(li);
             });
 
         let tekniikatlista = document.getElementById("tekniikat");
+        tekniikatlista.innerHTML = "";
         data.tekniikat.forEach(item => {
             let li= document.createElement("li");
             let a= document.createElement("a");
@@ -26,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         })
         .catch(error => {
-            document.getElementById("vastaus").innerHTML = "<p>Tietoa ei pystytä hakemaan</p>";
             console.error("Virhe haettaessa JSON-dataa:", error);
+            document.body.innerHTML += "<p style='color: red;'>Tietoa ei pystytä hakemaan.</p>";
         });
 });
