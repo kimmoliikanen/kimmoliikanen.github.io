@@ -67,3 +67,31 @@ nav a {
 nav a:hover {
     text-decoration:none;
 }
+
+/*taulukko*/
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+    
+}
