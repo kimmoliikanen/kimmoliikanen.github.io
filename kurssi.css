@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4; /* Kevyt harmaa tausta */
-    color: #333;
+    background-color: whitesmoke; /* Kevyt harmaa tausta */
+    color: #000000;
     max-width: 900px;
     width: 90%;
     margin: auto;
@@ -13,10 +13,11 @@ body {
 /* Otsikoiden taustavärit */
 h1 {
     text-align: center;
-    background-color: #c0d7f3; /* Vaaleanharmaa tausta */
+    background-color: whitesmoke; /* Vaaleanharmaa tausta */
     padding: 10px;
     border-radius: 5px;
 }
+
 
 /* Linkkilista */
 ul {
@@ -46,4 +47,23 @@ img {
     display: block;
     margin: 20px auto;
     border-radius: 10px;
+}
+
+/* navigaatio */
+
+nav {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration:none;
 }
