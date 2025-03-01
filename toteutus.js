@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://kimmoliikanen.github.io/toteutus.json") //oma JSON-linkki
     .then(response => response.json())
     .then(data => {
+        document.getElementById("toteutusnimi").textContent = data.toteutus;
         document.getElementById("lukumaara").textContent = data.lukumaara;
         document.getElementById("ajankohta").textContent = `${data.alku} - ${data.loppu}`;
         document.getElementById("kesto").textContent = data.kesto;
