@@ -28,20 +28,24 @@
 
 <!--Navigaatio-->
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Categories
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="men.html">Men</a></li>
-              <li><a class="dropdown-item" href="women.html">Women</a></li>
-              <li><a class="dropdown-item" href="equipment.html">Equipment</a></li>
-            </ul>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="men.html">Men</a></li>
+            <li><a class="dropdown-item" href="women.html">Women</a></li>
+            <li><a class="dropdown-item" href="equipment.html">Equipment</a></li>
+        </ul>
+        <!--Ostoskorin ikoni-->
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                    <i class="bi bi-cart fs-4"></i>
+                </a>
+            </li>
           </li> 
         </ul>
       </div>
@@ -51,7 +55,7 @@
 
 <!-- Kuvakaruselli -->
 
-<div id="carouselExampleIndicators" class="carousel slide mt-5 py-5" data-bs-ride="carousel" data-bs-interval="3000">
+<div id="carouselExampleIndicators" class="carousel slide mt-0 py-0" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -61,12 +65,27 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="landscape-3600546_640.jpg" class="d-block w-100" alt="trail running in a sunset">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+                <h2 class="display-4 text-light fw-bold">Explore the Great Outdoors</h2>
+                <p class="text-light">Find the best gear for your next adventure</p>
+                <a href="shop.html" class="btn btn-lg btn-light mt-2">Shop now</a>
+            </div>
         </div>
         <div class="carousel-item">
             <img src="hiking-2705939_1280.jpg" class="d-block w-100" alt="trail running on a mountain top">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+                <h2 class="display-4 text-light fw-bold">Conquer Every Trail</h2>
+                <p class="text-light">Gear up and go further</p>
+                <a href="shop.html" class="btn btn-lg btn-light mt-2">Shop Now</a>
+            </div>
         </div>
         <div class="carousel-item">
-            <img src="mountain-trail-2260679_1280.jpg" class="d-block w-100" alt="trail on a mountain">
+            <img src="IMG_0733.jpeg" class="d-block w-100" alt="trail on a mountain">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+                <h2 class="display-4 text-light fw-bold">Adventure Awaits</h2>
+                <p class="text-light">Be prepared for every journey</p>
+                <a href="shop.html" class="btn btn-lg btn-light mt-2">Shop Now</a>
+            </div>
         </div>   
     </div>
 
