@@ -23,7 +23,6 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
 
-
     <!--Navigaatiopalkki pysyy ylhäällä-->
 <nav class="navbar navbar-expand-lg bg-light border-bottom border-body fixed-top" data-bs-theme="light">
 <div class="container-fluid d-flex align-items-center" id="alku">
@@ -39,10 +38,8 @@
 <!--Navigaatio-->
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
         <ul class="dropdown-menu">
@@ -50,17 +47,20 @@
             <li><a class="dropdown-item" href="women.html">Women</a></li>
             <li><a class="dropdown-item" href="equipment.html">Equipment</a></li>
         </ul>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        
 <!--Ostoskorin ikoni-->
             <li class="nav-item">
-                <a class="nav-link" href="cart.html">
-                    <i class="bi bi-cart fs-4"></i><span id="cart-count">0</span>
-                </a>
+                <a class="nav-link align-items-center" href="cart.html">
+                    <i class="bi bi-cart fs-4"></i><span id="cart-count">0</span>                </a>
             </li>
           </li> 
         </ul>
       </div>
     </div>
   </nav>
+
 
 <div class="container mt-5 pt-5">
     <h1>Cart</h1>

@@ -177,6 +177,10 @@ body {
     padding-top: 0 !important;
 }
 
+.carousel {
+    margin-bottom: 50px; /* Lisää tilaa karusellin alle */
+}
+
 .carousel-item img {
     width: 100%;
     height: 100vh; /* Koko näytön korkeus */

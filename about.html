@@ -20,49 +20,44 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
 
-    <!--Linkitykset sivuille-->
-<nav>
-    <a href="index.html"></a>
-    <a href="shop.html"></a>
-    <a href="about.html"></a>
-    <a href="contact.html"></a>
-</nav>
-
-    <!--Navigaatiopalkki pysyy ylhäällä-->
+  <!--Navigaatiopalkki pysyy ylhäällä-->
 <nav class="navbar navbar-expand-lg bg-light border-bottom border-body fixed-top" data-bs-theme="light">
 <div class="container-fluid d-flex align-items-center" id="alku">
 
-        <a class="navbar-brand d-flex align-items-center" href="index.html"> Mountain Trail
-        <img src="mountain1-01.jpg" width="40" height="32" class="ms-2" alt="This is a picture of a mountain"> <!--Kuva tekstin vieressä-->
-        </a>
+      <a class="navbar-brand d-flex align-items-center" href="index.html"> Mountain Trail
+      <img src="mountain1-01.jpg" width="40" height="32" class="ms-2" alt="This is a picture of a mountain"> <!--Kuva tekstin vieressä-->
+      </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
 <!--Navigaatio-->
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="men.html">Men</a></li>
+          <li><a class="dropdown-item" href="women.html">Women</a></li>
+          <li><a class="dropdown-item" href="equipment.html">Equipment</a></li>
+      </ul>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      
+<!--Ostoskorin ikoni-->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="men.html">Men</a></li>
-              <li><a class="dropdown-item" href="women.html">Women</a></li>
-              <li><a class="dropdown-item" href="equipment.html">Equipment</a></li>
-            </ul>
-            <!--Ostoskorin ikoni-->
-            <li class="nav-item">
-                <a class="nav-link" href="cart.html">
-                  <i class="bi bi-cart fs-4"></i><span id="cart-count">0</span>                    </a>
-          </li> 
-        </ul>
-      </div>
+              <a class="nav-link align-items-center" href="cart.html">
+                  <i class="bi bi-cart fs-4"></i><span id="cart-count">0</span>                </a>
+          </li>
+        </li> 
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
 <!--Kuva ja tekstit-->
 
