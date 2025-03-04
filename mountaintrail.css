@@ -80,6 +80,12 @@ body { position: relative;}
 .navbar-nav .nav-item {
     margin-bottom: 5px; /* Pieni väli linkkien väliin mobiilissa */
 }
+
+.navbar .nav-item .bi-cart {
+    vertical-align: middle; /* Tasaa ikoni pystysuunnassa */
+    font-size: 1.5rem; /* Voit säätää kokoa tarvittaessa */
+}
+
 /*karusellin koko*/
 
 .carousel-item img {

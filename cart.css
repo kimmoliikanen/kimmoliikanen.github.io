@@ -1,0 +1,59 @@
+.cart-container {
+    background-color: #f5f0e1; /* Vaaleanbeige tausta */
+    padding: 20px;
+    border-radius: 10px; /* Pehmeät reunat */
+}
+
+.cart-item {
+    background-color: white; /* Valkoinen tausta yksittäisille tuotteille */
+    padding: 15px;
+    margin-bottom: 15px; /* Lisää ilmaa tuotteiden väliin */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hieman varjoa erottuvuuden lisäämiseksi */
+}
+
+.cart-item img {
+    max-width: 80px; /* Pienennetään tuotekuvia */
+    border-radius: 5px;
+}
+
+.cart-total {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+body {
+    background-color: #f8f8f1 !important; /* Vaaleanbeige */
+}
+
+.container {
+    background-color: white; /* Valkoinen tausta ostoskorille */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Pehmeä varjo */
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#cart-items li {
+    list-style: none; /* Poista pisteet */
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px; /* Lisää tilaa tuotteiden väliin */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#clear-cart {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#clear-cart:hover {
+    background-color: #6d6d6d;
+}
