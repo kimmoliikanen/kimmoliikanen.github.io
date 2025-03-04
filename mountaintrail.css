@@ -136,6 +136,12 @@ body { position: relative;}
     justify-content: space-between; /* Tekstit ja nappi tasaisesti */
 }
 
+.card img {
+    height: 250px; /* Aseta sopiva korkeus */
+    object-fit: cover; /* Säilyttää mittasuhteet ja rajaa kuvaa tarvittaessa */
+    width: 100%; /* Varmistaa, että kuva täyttää kortin leveyden */
+}
+
 
 html, body {
     height: 100%;
