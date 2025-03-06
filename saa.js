@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const apiKey = "665ecd56dfc08dbb50feb8b8f5034e28";
     const kaupungit = ["Helsinki", "Tampere", "Singapore"];
-    const tableBody = document.querySelector("#saa-table tbody");
+    const tableBody = document.querySelector("saa-table tbody");
 
-    tableBody.innerHTML = "<tr><td colspan='4'>Ladataan säätietoja...</td></tr>";
+    tableBody.innerHTML = "<tr>td colspan='4'>Ladataan säätietoja...</td></tr>";
 
     //Haetaan säätiedot kaikille kaupungeille
     Promise.all(kaupungit.map(kaupunki => haeSaa(kaupunki, apiKey)))
@@ -32,7 +32,7 @@ function haeSaa(kaupunki, apiKey) {
                     <td>${data.name}</td>
                     <td>${data.weather[0].description}</td>
                     <td>${data.main.temp}°C</td>
-                    <td>${data.wind.speed} m/s</td>
+                    <td>${data.wind.speed} m/s</>
                 </tr>
             `;
 

@@ -16,6 +16,9 @@
     <!--ostoskori-->
     <script defer src="cart.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script defer src="map-widget.js"></script>
     
 </head>
 
@@ -24,7 +27,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
 
     <!--Navigaatiopalkki pysyy ylhäällä-->
-<nav class="navbar navbar-expand-lg bg-light border-bottom border-body fixed-top" data-bs-theme="light">
+<nav class="navbar navbar-expand-lg bg-light border-bottom border-body fixed-top" data-bs-theme="light" aria-label="Main Navigation">
 <div class="container-fluid d-flex align-items-center" id="alku">
 
         <a class="navbar-brand d-flex align-items-center" href="index.html"> Mountain Trail
@@ -37,18 +40,24 @@
 
 <!--Navigaatio-->
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="men.html">Men</a></li>
+        <li><a class="dropdown-item" href="women.html">Women</a></li>
+        <li><a class="dropdown-item" href="equipment.html">Equipment</a></li>
+    </ul>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="men.html">Men</a></li>
-            <li><a class="dropdown-item" href="women.html">Women</a></li>
-            <li><a class="dropdown-item" href="equipment.html">Equipment</a></li>
+            <li><a class="dropdown-item" href="about.html">About us</a></li>
+            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
         </ul>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </li>
+
         
 <!--Ostoskorin ikoni-->
             <li class="nav-item">
@@ -59,6 +68,7 @@
         </ul>
       </div>
     </div>
+   
   </nav>
 
 
@@ -70,7 +80,7 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-
+<!--Karusellin kuvat ja niissä CTA-painike-->
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="landscape-3600546_640.jpg" class="d-block w-100" alt="trail running in a sunset">
@@ -192,38 +202,15 @@
     </div>
 </div>
 
-<!--Haitari-->
+<section id="expert-guide">
+    <div class="text-content">
+    <h2>Our Expert Helps You Find the Best Gear and the Best Trails</h2>
+    <p>Explore the top hiking trails and get recommendations for the best outdoor gear. Whether you're a beginner or an experienced hiker, we've got you covered.</p>
+    </div>  
+    <div id="map"></div>
+    <div id="map-widget"></div>
+</section>
 
-<div class="container mt-5 pt-4 mb-5">
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <!--Haitarin ensimmäinen osa-->
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Payment methods
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    ApplePay, Klarna, Card, PayPal
-                </div>
-            </div>
-        </div>
-            <!--Haitarin toinen osa-->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Terms & conditions
-            </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                Shipping
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
 
 
 
@@ -236,15 +223,16 @@
             <a href="#" class="text-dark me-3"><i class="bi bi-youtube fs-4"></i></a>
         </div>
 
-        <!--Uutiskirjeen tilaus-->
-        <form class="d-flex justify-content-center">
-            <input type="email" class="form-control w-50" placeholder="Email" required>
+          <!--Uutiskirjeen tilaus-->
+          <form class="d-flex justify-content-center">
+            <input type="email" class="form-control w-50" placeholder="Email" aria-label="Email" required>
             <button type="submit" class="btn btn-dark ms-2">Subscribe</button>
         </form>
 
         <!--Alatunnisteen teksti-->
         <p class="mt-3 mb-0">&copy; 2025 Mountain Trail. All rights reserved.</p>
     </div>
+   
 </footer>
 
 </body>

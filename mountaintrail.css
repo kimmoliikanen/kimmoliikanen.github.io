@@ -218,3 +218,52 @@ body {
     background-color: #f6f9f4;
 }
 
+#map-widget {
+    width: 80%;  /* Voit myös käyttää esim. 80% */
+    max-width: 500px; /* Rajoittaa kartan leveyttä */
+    height: 250px; /* Pienentää korkeutta */
+    min-height: 200px; /* Tarvittaessa muokattavissa */
+    margin: 0 auto; /* Keskittää kartan */
+}
+
+#expert-guide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 5%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%; /* Vie koko leveyden */
+    gap: 40px;
+}
+
+.text-content {
+    width: 50%;
+    max-width: 600px; /* Rajoittaa tekstialueen leveyttä */
+}
+
+.text-content h2 {
+    margin-bottom: 20px; /* Lisää väliä otsikon ja paragraphin väliin */
+}
+
+.text-content p {
+    margin-bottom: 30px; /* Lisää väliä paragraphin ja kartan väliin */
+}
+
+@media (max-width: 768px) {
+    #expert-guide {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, #map-widget {
+        width: 100%;
+        max-width: none;
+    }
+
+    #map-widget {
+        height: 200px; /* pienennetään korkeutta mobiilissa */
+    }
+}
+
+
