@@ -83,15 +83,60 @@ body { position: relative;}
 
 .navbar .nav-item .bi-cart {
     vertical-align: middle; /* Tasaa ikoni pystysuunnassa */
-    font-size: 1.5rem; /* Voit säätää kokoa tarvittaessa */
+    font-size: 1.5rem; /*säätää kokoa tarvittaessa */
 }
 
-/*karusellin koko*/
+/*Karuselli*/
 
 .carousel-item img {
     width: 100%;
     height: 50vh; 
     object-fit: cover;
+}
+
+.carousel {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.carousel {
+    margin-bottom: 50px; /* Lisää tilaa karusellin alle */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh; /* Koko näytön korkeus */
+    object-fit: cover; /* Rajaa kuva täyttämään alue ilman vääristymistä */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    border: none;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #f6f9f4;
 }
 
 /*ruudukon kuvien pyöristys*/
@@ -161,6 +206,8 @@ html, body {
     flex: 1; /* Tämä venyttää pääsisällön täyteen korkeuteen */
 }
 
+/*FOOTER*/
+
 footer {
     width: 100%;
     background-color: #f8f9fa;
@@ -172,51 +219,7 @@ body {
     padding-top: 80px; /* Varmistaa, että sisältö ei jää navbarin alle */
 }
 
-.carousel {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-.carousel {
-    margin-bottom: 50px; /* Lisää tilaa karusellin alle */
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100vh; /* Koko näytön korkeus */
-    object-fit: cover; /* Rajaa kuva täyttämään alue ilman vääristymistä */
-}
-
-.carousel-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-}
-
-
-
-.carousel-caption h2 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.carousel-caption p {
-    font-size: 1.2rem;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.carousel-caption .btn {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #ffffff;
-    border: none;
-}
-
-.carousel-caption .btn:hover {
-    background-color: #f6f9f4;
-}
+/*kartta*/
 
 #map-widget {
     width: 80%;  /* Voit myös käyttää esim. 80% */
