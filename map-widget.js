@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    const map = L.map(mapContainer).setView([61.4978, 23.7610], 12); // Tampereen keskipiste
-
+    const map = L.map(mapContainer).setView([60.1699, 24.9384], 12); // Helsingin keskipiste
+    
     // OpenStreetMap-taustakartta
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
