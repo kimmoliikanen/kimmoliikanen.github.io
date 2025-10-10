@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const map = L.map(mapContainer).setView([60.1699, 24.9384], 12); // Helsingin keskipiste
     
     // OpenStreetMap-taustakartta
+    
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
